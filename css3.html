@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>learn css3</title>
+	<style type="text/css">
+	div.floor{
+		outline: 1px solid red;
+		position: absolute;
+		width: 950px;
+		height: 400px;
+		margin-left:auto; 
+		margin-right:auto; 
+	}
+	div.floor0{
+		outline: 1px solid blue;
+		position: absolute;
+		width: 950px;
+		height: 400px;
+		top:402px;
+		
+	}
+	div.box1{
+		float: left;
+		width: 70px;
+		height: 70px;
+		background-color: red;
+		margin: 50px;
+		-webkit-transform:rotate(50deg);
+		border-radius:5px;
+		box-shadow: 10px 10px 20px black;
+		
+	}
+	div.box2{
+		float: left;
+		width: 70px;
+		height: 70px;
+		background-color: orange;
+		margin: 50px;
+		-webkit-transition:-webkit-transform 2s;
+		
+	}
+	div.box2:hover{
+		-webkit-transform:rotate(300deg);
+
+	}
+	
+	div.box3{
+		float: left;
+		width: 75px;
+		height: 75px;
+		margin: 20px;
+		margin-top: 100px;
+		background-color: green;
+	}
+	div.box3:hover{
+	-webkit-transform:scale(2,2);
+	}
+	div.box4{
+		float: left;
+		width: 70px;
+		height: 70px;
+		margin: 20px;
+		
+	}
+	div.box4:hover{
+		text-shadow:15px 15px 4px red;
+	}
+	
+	div.box5{
+		float: left;
+		width: 100px;
+		height: 100px;
+		background-color: gray;
+		-webkit-transition:width 5s;
+	}
+	div.box5:hover{
+		width: 300px;
+	}
+	div.box6{
+		float: left;
+		width: 100px;
+		height: 100px;
+		background-color: brown;
+		margin-left: 20px;
+		margin-top: 50px;
+		-webkit-transition:width 2s,height 2s,-webkit-transform 2s;
+	}
+	div.box6:hover{
+		width: 200px;
+		height: 200px;
+		-webkit-transform:rotate(360deg);
+	}
+	div.box7{
+		float: left;
+		width: 100px;
+		height: 100px;
+		background-color: #696;
+		margin-left: 20px;
+		margin-top: 50px;
+		}
+	div.box7:hover{
+		-webkit-animation:colorchange 2s;
+		}
+		@-webkit-keyframes colorchange{
+			0%{background-color: red;}
+			25%{background-color: yellow;}
+			50%{background-color: blue;}
+			100%{background-color: green;}
+
+		}
+	div.box8{
+		float: left;
+		width: 100px;
+		height: 100px;
+		background-color: #615;
+		margin-left: 10px;
+		margin-top: 10px;
+		position: relative;
+		-webkit-animation:myanimation 5s;
+		}
+		@-webkit-keyframes myanimation{
+			0%{background-color: red;left:0;top: 0;}
+			25%{background-color: blue;left:200px;top: 0;}
+			50%{background-color: green;left:200px;top: 200px;}
+			75%{background-color: green;left:0;top: 200px;}
+			100%{background-color: orange;left:0;top: 0;}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="floor">
+		<div class="box1">rotate(50deg)</div>
+		<div class="box2">transition</div>
+		<div class="box3">scale(2,2)</div>
+		<div class="box5">width</div>
+		<div class="box6">width&height &rotate</div>
+		<div class="box7"></div>
+		
+
+
+	</div>
+	<div class="floor0">
+		<div class="box4"><h1></h1></div>
+		<div class="box8"></div>
+	</div>
+</body>
+</html>
