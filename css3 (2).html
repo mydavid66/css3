@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div.floor{
+			outline:2px dashed darkmagenta;
+			width: 800px;
+			height: 400px;
+			position: absolute;
+			left:20px;
+			top:100px;
+			overflow: hidden;
+			margin:auto;
+		}
+		div.box1{
+			background-color: red;
+			width: 150px;
+			height: 150px;
+			position: relative;
+			left:800px;
+			top:100px;
+			
+	-webkit-animation:boxs 1s linear;
+
+
+
+		}
+		div.box2{
+			background-color: orange;
+			width: 150px;
+			height: 150px;
+			position: relative;
+		}
+		div.box3{
+			background-color: blue;
+			width: 150px;
+			height: 150px;
+			position: relative;
+		}
+		@-webkit-keyframes boxs{
+
+			0%{-webkit-transform:translate(0,0);}
+			50%{-webkit-transform:translate(-150px,0);}
+			100%{-webkit-transform:translate(-300px,0);}
+		}
+	</style>
+</head>
+<body>
+	<div class="floor">
+		<div class="box1"></div>
+		<div class="box22"></div>
+		<div class="box33"></div>
+
+	</div>
+</body>
+</html>
